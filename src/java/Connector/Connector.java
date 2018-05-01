@@ -1,4 +1,4 @@
-package java.Connector ;
+package connector ;
 
 import org.neo4j.jdbc.Connection;
 import org.neo4j.jdbc.ResultSet;
@@ -20,7 +20,7 @@ public class Connector {
 
         try (Connection con = DriverManager.getConnection("jdbc:neo4j:bolt://localhost:7687", 'neo4j', password))
         {
-            System.out.println("Attempting to initiate Neo4J connection...")
+            System.out.println("Attempting to initiate Neo4J connection...");
             // * Query
             String query = "MATCH (n) RETURN (n)";
 
