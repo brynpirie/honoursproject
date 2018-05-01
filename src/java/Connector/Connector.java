@@ -1,4 +1,4 @@
-package connector ;
+package Connector ;
 
 import org.neo4j.jdbc.Connection;
 import org.neo4j.jdbc.ResultSet;
