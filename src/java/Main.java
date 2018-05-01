@@ -1,4 +1,3 @@
-package java;
 
 import java.Connector.Connector;
 import spark.Spark;
@@ -6,7 +5,7 @@ import spark.Spark;
 
 public class Main {
 
-    public static void Main() {
+    public static void main(String[] args) {
 
         System.out.println("Attempting to run initConn...");
         Connector.initConn();

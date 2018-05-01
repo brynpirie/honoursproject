@@ -8,6 +8,11 @@ import org.neo4j.jdbc.PreparedStatement;
 public class Connector {
 
     private final Driver driver;
+    private String password;
+
+    {
+        password = "neo4j";
+    }
 
     public static void initConn() {
 
