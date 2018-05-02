@@ -2,8 +2,8 @@ package Connector ;
 
 import org.neo4j.jdbc.Connection;
 import org.neo4j.jdbc.ResultSet;
-import org.neo4j.jdbc.BaseDriver;
 import org.neo4j.jdbc.PreparedStatement;
+import java.sql.DriverManager;
 
 public class Connector {
 
@@ -14,11 +14,18 @@ public class Connector {
         password = "neo4j";
     }
 
+    public static Connection getConnection(String url, Properties info) {
+
+        url = "";
+        //info = ;
+    return
+    }
+
     public static void initConn() {
 
         // Connecting
 
-        try (Connection con = DriverManager.getConnection("jdbc:neo4j:bolt://localhost:7687", 'neo4j', password))
+        try (Connection con = DriverManager.getConnection("jdbc:neo4j:bolt://localhost:7687", "neo4j", "neo4j"))
         {
             System.out.println("Attempting to initiate Neo4J connection...");
             // * Query
@@ -35,6 +42,8 @@ public class Connector {
                     }
                 }
             }
+        } catch(Exception e){
+            
         }
 
     } //END initConn()
